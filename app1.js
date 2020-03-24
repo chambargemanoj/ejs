@@ -1,6 +1,7 @@
 const express = require("express");
 const app = new express();
 const bodyParser = require('body-parser');
+var port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -32,6 +33,6 @@ app.post("/", function (req, res) {
    res.redirect("/")
 })
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("Server is running");
 })
