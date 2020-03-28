@@ -23,7 +23,7 @@ h1 {
   text-align: center;
 }
 
-.item {
+form.item {
   min-height: 70px;
   display: flex;
   align-items: center;
